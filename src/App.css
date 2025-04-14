@@ -1,0 +1,115 @@
+.App {
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 2rem auto; /* Center the app content */
+  padding: 2rem;
+  /* Remove text-align: center; if you don't want everything centered */
+}
+
+h1, h2 {
+  text-align: center; /* Center headings */
+  margin-bottom: 1.5em;
+}
+
+form {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(128, 128, 128, 0.1); /* Subtle background */
+}
+
+form div {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  display: block; /* Make button take full width */
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8em 1.5em;
+  background-color: #646cff; /* Example primary color */
+  color: white;
+  border: none;
+}
+
+form button:hover {
+  background-color: #535bf2;
+}
+
+form button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff4d4d; /* Red color for errors */
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li strong {
+  margin-right: 0.5em;
+}
+
+/* Dark mode specific adjustments for App.css if needed */
+@media (prefers-color-scheme: dark) {
+  form {
+    border-color: #555;
+    background-color: rgba(60, 60, 60, 0.3);
+  }
+
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="time"] {
+    background-color: #3a3a3a;
+    border-color: #555;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  li {
+    border-bottom-color: #444;
+  }
+
+  form button {
+    background-color: #646cff; /* Keep primary color or adjust */
+  }
+
+  form button:hover {
+    background-color: #535bf2;
+  }
+
+  form button:disabled {
+    background-color: #555;
+  }
+}
