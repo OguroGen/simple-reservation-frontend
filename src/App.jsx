@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 
-const API_URL = 'https://simple-reservation-api.onrender.com/api/reservations';
+const API_URL = 'https://ogureserve-api.onrender.com/api/reservations';
 
 function App() {
   const [reservations, setReservations] = useState([]);
